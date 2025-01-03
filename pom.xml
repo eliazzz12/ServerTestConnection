@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dam.mermelada</groupId>
-    <artifactId>TestConnection</artifactId>
+    <artifactId>ServerTestConnection</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

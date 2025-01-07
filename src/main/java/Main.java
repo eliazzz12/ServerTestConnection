@@ -45,6 +45,7 @@ public class Main {
 
             } catch (IOException e) {
                 System.out.println("SERVER Status: Stopped by Exception");
+                e.printStackTrace();
             }
             System.out.println("SERVER Status: Finished");
             try {

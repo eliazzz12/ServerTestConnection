@@ -8,12 +8,13 @@ import java.net.UnknownHostException;
 
 public class Main {
     private static final int PORT = 10100;
+    private static final String host = "sectamermelada.ddns.net";
     public static void main(String[] args) {
         System.out.println("Iniciando programa test");
 
         try {
             System.out.println("========================================================");
-            InetAddress dir = InetAddress.getByName("sectamermelada.ddns.net");
+            InetAddress dir = InetAddress.getByName(host);
 
             // Array de tipo InetAddress con todas las direcciones IP
             //asignadas a sectamermelada.ddns.net
@@ -24,7 +25,7 @@ public class Main {
 
             System.out.println("========================================================");
         } catch (UnknownHostException e) {
-            System.out.println("Error en la conexión al servidor");
+            System.out.println("Error en la conexion al servidor");
         }
         while(true){
             try(ServerSocket serverSocket = new ServerSocket(PORT)) {

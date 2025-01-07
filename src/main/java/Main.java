@@ -29,7 +29,7 @@ public class Main {
         }
         while(true){
             try(ServerSocket serverSocket = new ServerSocket(PORT)) {
-                System.out.println("Antes de aceptar clientes");
+                System.out.println("Esperando un cliente");
                 Socket client = serverSocket.accept();
                 System.out.println("Cliente aceptado");
 

@@ -47,6 +47,11 @@ public class Main {
                 System.out.println("SERVER Status: Stopped by Exception");
             }
             System.out.println("SERVER Status: Finished");
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                System.out.println("SERVER Status: Sleep interrupted");
+            }
         }
     }
 }

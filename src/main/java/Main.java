@@ -29,9 +29,13 @@ public class Main {
         }
         while(true){
             try(ServerSocket serverSocket = new ServerSocket(PORT)) {
+                System.out.println("Antes de aceptar clientes");
                 Socket client = serverSocket.accept();
+                System.out.println("Cliente aceptado");
+
                 DataOutputStream dos = new DataOutputStream(client.getOutputStream());
                 DataInputStream dis = new DataInputStream(client.getInputStream());
+
 
                 dos.writeUTF("SERVER: Saludos desde la Raspberry Pi de la Secta Mermelada :D");
 

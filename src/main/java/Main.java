@@ -5,7 +5,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Main {
-    private static final int PORT = 6200;
+    private static final int PORT = 10100;
     public static void main(String[] args) {
         try(ServerSocket serverSocket = new ServerSocket(PORT)) {
             Socket client = serverSocket.accept();
